@@ -4,7 +4,7 @@ import './less/index.less'
 
 // Event Listener 1; Console logs message when clicking header img
 const funBus = document.querySelector('header img');
-funBus.addEventListener("click", function(evt) {
+funBus.addEventListener("click", function() {
     console.log('Welcome to the fun bus!');
 })
 
@@ -17,7 +17,7 @@ logoHeading.addEventListener("mouseover", function(evt) {
       }, 1000);
     }, false);
 
-// Event Listener 3
+// Event Listener 3; Changes nav links sizes on mouse over
 
 const navLinks = document.querySelector('.nav');
 navLinks.addEventListener('mouseover', function(evt) {
@@ -25,6 +25,15 @@ navLinks.addEventListener('mouseover', function(evt) {
     setTimeout(function() {
         evt.target.style.fontSize = "";
       }, 500);
+})
+
+// Event Listener 4
+const contentHeader = document.querySelector('.content-section')
+contentHeader.addEventListener('mouseover', function(evt) {
+    evt.target.style.opacity = '.4%';
+    setTimeout(function() {
+        evt.target.style.opacity= "";
+    }, 1000);
 })
 
 // Event Listener 5
