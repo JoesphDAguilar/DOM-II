@@ -25,21 +25,33 @@ navLinks.addEventListener('mouseover', function(evt) {
     setTimeout(function() {
         evt.target.style.fontSize = "";
       }, 500);
-})
+}, false)
 
-// Event Listener 4
-const contentHeader = document.querySelector('.content-section')
-contentHeader.addEventListener('mouseover', function(evt) {
+// Event Listener 4; changes opacity for .content-section
+const contentSection = document.querySelector('.content-section');
+contentSection.addEventListener('mouseover', function(evt) {
     evt.target.style.opacity = '.4%';
     setTimeout(function() {
         evt.target.style.opacity= "";
     }, 1000);
-})
+}, false)
 
-// Event Listener 5
+// Event Listener 5; changes background color for .inverse-content
+const inverseSection = document.querySelector('.inverse-content');
+inverseSection.addEventListener('mouseover', function(evt) {
+    evt.target.style.background = '#87ceeb ';
+    setTimeout(function() {
+        evt.target.style.background = '';
+    }, 1000);
+}, false)
 
 // Event Listener 6
-
+inverseSection.addEventListener('mouseover', function(evt) {
+    evt.target.style.color = 'white';
+    setTimeout(function() {
+        evt.target.style.color = '';
+    }, 1000);
+}, false)
 // Event Listener 7
 
 // Event Listener 8
