@@ -80,3 +80,12 @@ destContent.addEventListener('mouseover', function(evt) {
 }, false);
 
 // Event Listener 10
+const destination = document.querySelector('.content-pick');
+destination.addEventListener('mouseover', function(evt) {
+    evt.target.style.fontSize = '.5rem';
+    evt.target.style.opacity = '70%';
+    setTimeout(function() {
+        evt.target.style.fontSize = '';
+        evt.target.style.opacity = '';
+    }, 1000);
+}, false);
