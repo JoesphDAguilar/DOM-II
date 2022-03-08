@@ -89,3 +89,9 @@ destination.addEventListener('mouseover', function(evt) {
         evt.target.style.opacity = '';
     }, 1000);
 }, false);
+
+// preventDefault
+Array.from(document.links).forEach(link => link.addEventListener('click' , evt => {
+    evt.preventDefault();
+    alert("Sorry! You're not going anywhere!");
+}))
