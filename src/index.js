@@ -25,7 +25,7 @@ navLinks.addEventListener('mouseover', function(evt) {
     setTimeout(function() {
         evt.target.style.fontSize = "";
       }, 500);
-}, false)
+}, false);
 
 // Event Listener 4; changes opacity for .content-section
 const contentSection = document.querySelector('.content-section');
@@ -34,7 +34,7 @@ contentSection.addEventListener('mouseover', function(evt) {
     setTimeout(function() {
         evt.target.style.opacity= "";
     }, 1000);
-}, false)
+}, false);
 
 // Event Listener 5; changes background color for .inverse-content
 const inverseSection = document.querySelector('.inverse-content');
@@ -43,7 +43,7 @@ inverseSection.addEventListener('mouseover', function(evt) {
     setTimeout(function() {
         evt.target.style.background = '';
     }, 1000);
-}, false)
+}, false);
 
 // Event Listener 6
 inverseSection.addEventListener('mouseover', function(evt) {
@@ -51,7 +51,7 @@ inverseSection.addEventListener('mouseover', function(evt) {
     setTimeout(function() {
         evt.target.style.color = '';
     }, 1000);
-}, false)
+}, false);
 
 // Event Listener 7; underlines .intro on mouseover
 const intro = document.querySelector('.intro');
@@ -60,7 +60,7 @@ intro.addEventListener('mouseover', function(evt) {
     setTimeout(function() {
         evt.target.style.textDecoration = '';
     }, 500);
-}, false)
+}, false);
 
 // Event Listener 8
 logoHeading.addEventListener('mouseover', function(evt) {
@@ -68,7 +68,15 @@ logoHeading.addEventListener('mouseover', function(evt) {
     setTimeout(function() {
         evt.target.textContent = 'Fun Bus';
     }, 1000);
-}, false)
+}, false);
+
 // Event Listener 9
+const destContent = document.querySelector('.content-destination');
+destContent.addEventListener('mouseover', function(evt) {
+    evt.target.style.color = '#86b6fe';
+    setTimeout(function() {
+        evt.target.style.color = '';
+    },1000);
+}, false);
 
 // Event Listener 10
