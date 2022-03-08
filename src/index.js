@@ -8,10 +8,10 @@ funBus.addEventListener("click", function() {
     console.log('Welcome to the fun bus!');
 })
 
-// Event Listener 2; changes logo-heading font color to yellow and returns to default color
+// Event Listener 2; changes logo-heading font color to powder blue and returns to default color
 const logoHeading = document.querySelector('.logo-heading');
 logoHeading.addEventListener("mouseover", function(evt) {
-    evt.target.style.color = 'yellow';
+    evt.target.style.color = '#A0D2DB';
     setTimeout(function() {
         evt.target.style.color = "";
       }, 1000);
@@ -53,7 +53,7 @@ inverseSection.addEventListener('mouseover', function(evt) {
     }, 1000);
 }, false)
 
-// Event Listener 7
+// Event Listener 7; underlines .intro on mouseover
 const intro = document.querySelector('.intro');
 intro.addEventListener('mouseover', function(evt) {
     evt.target.style.textDecoration = 'underline';
@@ -63,7 +63,12 @@ intro.addEventListener('mouseover', function(evt) {
 }, false)
 
 // Event Listener 8
-
+logoHeading.addEventListener('mouseover', function(evt) {
+    evt.target.textContent = "Welcome!"
+    setTimeout(function() {
+        evt.target.textContent = 'Fun Bus';
+    }, 1000);
+}, false)
 // Event Listener 9
 
 // Event Listener 10
