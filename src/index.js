@@ -17,16 +17,15 @@ logoHeading.addEventListener("mouseover", function(evt) {
       }, 1000);
     }, false);
 
-
 // Event Listener 3
-const navLink = document.querySelector('.nav-link');
-navLink.addEventListener('mouseover', function(evt) {
+
+const navLinks = document.querySelector('.nav');
+navLinks.addEventListener('mouseover', function(evt) {
     evt.target.style.fontSize = '2rem';
     setTimeout(function() {
         evt.target.style.fontSize = "";
       }, 500);
-    }, false);
-// Event Listener 4
+})
 
 // Event Listener 5
 
