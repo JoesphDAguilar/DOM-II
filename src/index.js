@@ -52,7 +52,15 @@ inverseSection.addEventListener('mouseover', function(evt) {
         evt.target.style.color = '';
     }, 1000);
 }, false)
+
 // Event Listener 7
+const intro = document.querySelector('.intro');
+intro.addEventListener('mouseover', function(evt) {
+    evt.target.style.textDecoration = 'underline';
+    setTimeout(function() {
+        evt.target.style.textDecoration = '';
+    }, 500);
+}, false)
 
 // Event Listener 8
 
